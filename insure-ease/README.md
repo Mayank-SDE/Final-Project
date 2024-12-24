@@ -133,3 +133,10 @@ const store = configureStore({
 export default store;
 
 ```
+
+## Integrating React Router
+* For Navigating between different pages.
+```bash
+# Installing the npm package react-router-dom
+$ npm install react-router-dom
+```

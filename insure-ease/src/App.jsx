@@ -1,12 +1,5 @@
-import { useState } from 'react'
+import AppRoutes from './AppRoutes';
 
-function App() {
+const App = () => <AppRoutes />;
 
-  return (
-    <>
-      <h1>Mayank</h1>
-    </>
-  )
-}
-
-export default App
+export default App;
