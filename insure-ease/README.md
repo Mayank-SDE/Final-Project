@@ -101,4 +101,35 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 * **Theme** : Custom CSS for consistent styling.
 
 ## Color Theme 
-* **
+* **Primary**: #007bff (Bootstrap's blue).
+* **Secondary**: #6c757d (Grey for subtle text).
+* **Success**: #28a745 (For approvals and successful actions).
+* **Warning**: #ffc107 (For alerts or warnings).
+* **Danger**: #dc3545 (For errors or rejections).
+* **Background**: #f8f9fa (Light grey).
+
+## Redux Store Setup
+
+```bash
+# Installing @reduxjs/toolkit and react-redux for leveraging its functionalities
+$ npm install @reduxjs/toolkit react-redux
+
+```
+
+```js
+import { configureStore } from '@reduxjs/toolkit';
+import authSlice from './features/authSlice';
+import policySlice from './features/policySlice';
+import claimSlice from './features/claimSlice';
+
+const store = configureStore({
+  reducer: {
+    auth: authSlice,
+    policy: policySlice,
+    claim: claimSlice,
+  },
+});
+
+export default store;
+
+```
